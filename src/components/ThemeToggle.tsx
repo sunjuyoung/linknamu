@@ -25,7 +25,7 @@ export default function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label={theme === "dark" ? "밝은 화면으로 전환" : "어두운 화면으로 전환"}
-      className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/80 text-lg shadow-sm backdrop-blur transition hover:bg-slate-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-400 dark:border-slate-700 dark:bg-slate-800/80 dark:hover:bg-slate-700"
+      className="flex h-10 w-10 items-center justify-center rounded-full border border-white/70 bg-white/70 text-lg shadow-[0_6px_16px_-10px_rgba(150,95,55,0.6)] backdrop-blur transition duration-200 hover:bg-white/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-300 dark:border-white/10 dark:bg-white/[0.06] dark:hover:bg-white/[0.11]"
     >
       {/* 마운트 전에는 빈 문자열이라 서버/클라이언트 HTML이 어긋나지 않는다 */}
       <span aria-hidden="true">{theme === null ? "" : theme === "dark" ? "☀️" : "🌙"}</span>

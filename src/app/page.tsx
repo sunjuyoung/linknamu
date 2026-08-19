@@ -18,7 +18,7 @@ export default function HomePage() {
         <LinkList links={links} />
       </div>
 
-      <footer className="mt-auto pt-12 text-center text-xs text-slate-400 dark:text-slate-500">
+      <footer className="mt-auto pt-12 text-center text-xs text-stone-400 dark:text-stone-500">
         🌳 링크나무로 만든 페이지
       </footer>
     </main>

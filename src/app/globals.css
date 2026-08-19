@@ -3,7 +3,33 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* 따뜻한 연살구 톤 */
+    --bg-base: #fff7f0;
+    --bg-glow-top: rgba(255, 205, 165, 0.85);
+    --bg-glow-bottom: rgba(255, 226, 199, 0.7);
+  }
+
+  .dark {
+    /* 다크모드에서도 회청색이 아닌 따뜻한 중성 톤을 유지한다 */
+    --bg-base: #1a1310;
+    --bg-glow-top: rgba(146, 84, 44, 0.32);
+    --bg-glow-bottom: rgba(94, 58, 36, 0.28);
+  }
+
   html {
     -webkit-tap-highlight-color: transparent;
+    /* 한글 산세리프는 살짝 좁은 자간이 더 정돈돼 보인다 */
+    letter-spacing: -0.01em;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--bg-base);
+    background-image:
+      radial-gradient(90% 55% at 50% 0%, var(--bg-glow-top) 0%, transparent 70%),
+      radial-gradient(70% 45% at 50% 100%, var(--bg-glow-bottom) 0%, transparent 75%);
+    /* 스크롤해도 그라데이션이 따라 흐르지 않도록 고정 */
+    background-attachment: fixed;
   }
 }

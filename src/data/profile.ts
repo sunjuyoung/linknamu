@@ -14,8 +14,8 @@ export type LinkItem = {
 };
 
 export const profile: Profile = {
-  name: "김링크",
-  bio: "프론트엔드 개발자 · 기록하는 사람",
+  name: "김개발",
+  bio: "풀스텍 개발자 · 기록하는 사람",
   avatarUrl: "/avatar.svg",
 };
 
@@ -34,13 +34,13 @@ export const links: LinkItem[] = [
     url: "https://github.com",
     icon: "💻",
   },
-  {
-    id: "instagram",
-    title: "Instagram",
-    description: "일상과 사진",
-    url: "https://instagram.com",
-    icon: "📷",
-  },
+  // {
+  //   id: "instagram",
+  //   title: "Instagram",
+  //   description: "일상과 사진",
+  //   url: "https://instagram.com",
+  //   icon: "📷",
+  // },
   {
     id: "email",
     title: "이메일 보내기",

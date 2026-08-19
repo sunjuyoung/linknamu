@@ -8,7 +8,7 @@ type Props = {
 export default function LinkList({ links }: Props) {
   if (links.length === 0) {
     return (
-      <p className="rounded-2xl border border-dashed border-slate-300 py-10 text-center text-sm text-slate-500 dark:border-slate-700 dark:text-slate-400">
+      <p className="rounded-3xl border border-dashed border-orange-200 py-10 text-center text-sm text-stone-500 dark:border-white/10 dark:text-stone-400">
         아직 등록된 링크가 없습니다.
       </p>
     );
